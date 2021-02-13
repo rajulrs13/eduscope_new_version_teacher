@@ -1,0 +1,19 @@
+{
+  "name": "Eduscope",
+  "short_name": "Eduscope",
+  "theme_color": "#01579b",
+  "background_color": "#01579b",
+  "display": "standalone",
+  "start_url": "/",
+  "splash_pages": "null",
+  "lang": "en",
+  "orientation": "portrait",
+  "description": "Quiz Simplified",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "https://www.mujquiz.com/images/icons/icon-512x512.png",
+      "sizes": "512x512"
+    }
+  ]
+}

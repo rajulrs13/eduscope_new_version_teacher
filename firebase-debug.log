@@ -1,0 +1,39 @@
+[debug] [2019-02-09T19:28:33.564Z] ----------------------------------------------------------------------
+[debug] [2019-02-09T19:28:33.566Z] Command:       /usr/bin/node /usr/local/bin/firebase init
+[debug] [2019-02-09T19:28:33.567Z] CLI Version:   6.3.1
+[debug] [2019-02-09T19:28:33.567Z] Platform:      linux
+[debug] [2019-02-09T19:28:33.567Z] Node Version:  v8.10.0
+[debug] [2019-02-09T19:28:33.567Z] Time:          Sun Feb 10 2019 00:58:33 GMT+0530 (IST)
+[debug] [2019-02-09T19:28:33.567Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-09T19:28:33.572Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-09T19:28:33.573Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/lokesh/Desktop/Eduscope 2.0
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2019-02-09T19:28:35.937Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-02-09T19:28:35.938Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-02-09T19:28:36.299Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-09T19:28:36.365Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?page_size=100  
+ 
+[debug] [2019-02-09T19:28:36.771Z] Error: getaddrinfo ENOTFOUND firebase.googleapis.com firebase.googleapis.com:443
+    at errnoException (dns.js:50:10)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:92:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND firebase.googleapis.com firebase.googleapis.com:443

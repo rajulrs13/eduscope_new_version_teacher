@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="msapplication-starturl" content="/" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#01579B" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#01579B" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#01579B" />
+    <title>Eduscope</title>
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script>     -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script> -->
+
+    <script src="//unpkg.com/vue-chartjs@2.6.0/dist/vue-chartjs.full.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.js"></script>
+    <script src="//unpkg.com/hchs-vue-charts@1.2.8"></script>
+    <style lang="css">
+      html {
+          font-family: Montserrat, sans-serif
+      }
+      ::-webkit-scrollbar {
+          width: 6px
+      }
+      ::-webkit-scrollbar-track {
+          background: #555
+      }
+      ::-webkit-scrollbar-thumb {
+          background: #2979FF
+      }
+      ::-webkit-scrollbar-thumb,
+      ::-webkit-scrollbar-thumb:hover {
+          -webkit-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out
+      }
+      ::-webkit-scrollbar-thumb:hover {
+          background: #777
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but Eduscope doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <script>
+      // Check that service workers are registered
+      if ("serviceWorker" in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/sw.js");
+        });
+      }
+    </script>
+  </body>
+</html>
