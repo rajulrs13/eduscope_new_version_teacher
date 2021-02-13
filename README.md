@@ -1,3 +1,10 @@
+# Eduscope Teacher Portal
+
+## Screenshots
+<div>
+<img src="https://github.com/rajulrs13/eduscope_new_version_teacher/blob/main/src/assets/pwa.gif" width="270" height="555">
+</div>
+
 ## Project setup
 ```
 npm install
@@ -25,4 +32,3 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-# eduscope2.0teacher
